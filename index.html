@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="Style.css">
+    <script src="https://kit.fontawesome.com/bdc4c50b50.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#Services">Services</a></li>
+                <li><a href="#Portfolio">Portfolio</a></li>
+                <li><a href="#Contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Assistant Manager</p>
+            <h1>Hi, I'm <span>Janodhya</span><br> From Sri Lanka</h1>
+        </div>
+    </div>
+</div>
+<!-- ------------------- about----------------- -->
+<div id="About">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/About me.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p> I am Janodhya, a second-year student pursuing a BSc (Hons) in Information Technology, specializing in Data Science. Alongside my studies, I am proud to lead the Editorial Subcommittee within the IEEE Student Branch Chapter at SLTC. I bring a strong sense of dedication to everything I do, whether it's analyzing data or crafting engaging, high-quality content for our chapter. My role in IEEE IAS allows me to combine my technical background with my passion for communication, and I strive to foster a professional and collaborative environment where ideas can thrive.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Editorial</span><br>I have strong editorial skills, enabling me to craft clear, engaging content while ensuring accuracy and coherence in all communications.</li>
+                        <li><span>Life Coaching</span><br>Guiding career life</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2024-Present</span><br>Assistant Manager<br>Maga (Pvt)Ltd</li>
+                        <li><span>2024-Present</span><br>Head-Editorial Sub Committee<br> IEEE Student Branch-SLTC</li>
+                        <li><span>2023-2024</span><br>Head-Editorial Sub Commitee<br>Media Unit of SLTC</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2023-Present</span><br>SLTC Research University<br>BSc (Hons) in Information Technology in Data Science</li>
+                        <li><span>2022-2023</span><br>NIBM<br>Diploma in Information and Communication Technology</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!------------------------Servises-------------------------- -->
+<div id="Services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-light fa-page-caret-down"></i>
+                <h2>Resume Writing</h2>
+                <p>Having worked for some esteemed entities in the past few years and delivered impactful results, I am open to help more individuals and entities attain their required results.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-glide"></i>
+                <h2>Life Coaching</h2>
+                <p>Having worked for some esteemed entities in the past few years and delivered impactful results, I am open to help more individuals and entities attain their required results.</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!---------------------portfolio------------------------->
+<div id="Portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/Resume.png">
+                <div class="layer">
+                    <h3>Write your Resume</h3>
+                    <p>CV writing is about crafting a concise, tailored document that highlights your relevant skills, experience, and achievements for potential employers.</p>
+                    <a href="#"><i class="fa-solid fa-angles-right"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/Work.png">
+                <div class="layer">
+                    <h3>Guide Career Life</h3>
+                    <p>Guiding a career means setting goals, building relevant skills, and adapting to industry changes for long-term success.</p>
+                    <a href="#"><i class="fa-solid fa-angles-right"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+    </div>
+</div>
+<!-----------------contact----------------->
+<div id="Contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>janodhyaj@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>0745932671</p>
+
+                <div class="social-icon">
+                    <a href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="images/CV.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>copyright ® Janodhya.</p>
+    </div>
+</div>
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for (tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+    }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+}
+</script>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+
+    <script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbxEC1Ssa-Z-JJU43X8v3mFnTnLampmduMXILtyOoTAU06rccDAtCPuCWy3ZTDktVEu7/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("msg")
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML = "Message sent successfully"
+        setTimeout(function(){
+            msg.innerHTML = ""
+        },5000)
+        form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+</body>
+</html>
